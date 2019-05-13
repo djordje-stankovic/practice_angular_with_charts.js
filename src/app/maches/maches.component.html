@@ -1,0 +1,29 @@
+
+<section class="content-area main">
+  <div class="table-area">
+    <table class="responsive-table table">
+      <thead class="main">
+        <tr>
+          <th>Code</th>
+          <th>League</th>
+          <th>Home</th>
+          <th>Away</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr 
+         *ngFor="let mach of Maches1"
+         routerLink="graph/{{ mach.code }}">
+            <td>{{ mach.code }}</td>
+            <td>{{ mach.league }}</td>
+            <td>{{ mach.home }}</td>
+            <td>{{ mach.away  }}</td>
+            <td>Status</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+    
+

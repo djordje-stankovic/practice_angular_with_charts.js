@@ -1,0 +1,38 @@
+
+<div class="row">
+  <div class="row main">
+    <div class="row inline"><h2>Home : {{home}}</h2></div>
+    <div class="row inline"><h2>Away : {{away}}</h2></div>
+  </div>
+  <div class="column">
+    <div class="chart">
+      <canvas baseChart class="main"
+        [datasets]="barChartDataFrist"
+        [labels]="barChartLabelsFrist"
+        [options]="barChartOptions"
+        [legend]="barChartLegend"
+        [chartType]="barChartType">
+      </canvas>
+    </div>
+  </div>
+  <div class="column">
+    <canvas baseChart class="main"
+    [datasets]="barChartDataSec"
+    [labels]="barChartLabelsSec"
+    [options]="barChartOptions"
+    [legend]="barChartLegend"
+    [chartType]="barChartType">
+  </canvas>
+</div>
+</div>
+<div class="row bigGraph">
+  <div class="chart bigGraph">
+    <canvas baseChart class="bigGraph"
+      [datasets]="barChartDataTr"
+      [labels]="barChartLabelsTr"
+      [options]="barChartOptions"
+      [legend]="barChartLegend"
+      [chartType]="barChartType">
+    </canvas>
+  </div>
+</div>
