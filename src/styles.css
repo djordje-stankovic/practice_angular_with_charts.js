@@ -1,8 +1,12 @@
-body {
-    padding-top: 50px;
-  }
+
+body{
+  background: #0a531a;
+}
+
+
+
   
-  .navbar {
+  /*.navbar {
     height: 50px;
     padding: 0 15px;
     width: 100%;
@@ -18,23 +22,19 @@ body {
   
   .table-area {
     position: relative;
-    z-index: 0;
-    margin-top: 50px;
+    margin-top: 0px;
   }
   
   table.responsive-table {
     display: table;
-    /* required for table-layout to be used (not normally necessary; included for completeness) */
     table-layout: fixed;
-    /* this keeps your columns with fixed with exactly the right width */
     width: 100%;
-    /* table must have width set for fixed layout to work as expected */
     height: 100%;
   }
   
   table.responsive-table thead {
     position: fixed;
-    top: 50px;
+    top: 0px;
     left: 0;
     right: 0;
     width: 100%;
@@ -62,44 +62,46 @@ body {
 * {
     box-sizing: border-box;
 }
-
+*/
+/*
 html {
     height: 100%;
 }
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    background-color: #1C2228;
-    color: #f7fff7;
+    background-color: rgb(32, 48, 65);
+    color:  rgb(34, 105, 72);
     height: 100%;
 }
 
 a {
-    color: #44a4cd;
+    color:  rgb(34, 105, 72);
 }
 
 a:hover {
-    color: #44a8cf;
+    color: rgb(34, 105, 72);
 }
 
 .shadow {
-    box-shadow: 0 8px 12px rgba(0,0,0,0.2), 0 5px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 12px rgba(197, 20, 20, 0.2), 0 5px 6px rgba(219, 37, 37, 0.3);
 }
+*/
 
-
-.sidenav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+/*.sidenav {
+    
+    width: 160px;
+    position: fixed;
+    height: 100%;  
+    z-index: 1;
+    top: 0; 
     left: 0;
-    background-color: #111; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
+    background-color: rgb(34, 105, 72); 
+    overflow-x: hidden; 
     padding-top: 20px;
   }
   
-  /* The navigation menu links */
+
   .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
@@ -108,24 +110,24 @@ a:hover {
     display: block;
   }
   
-  /* When you mouse over the navigation links, change their color */
+  
   .sidenav a:hover {
     color: #f1f1f1;
   }
   
-  /* Style page content */
+   Style page content
   .main {
-    margin-left: 160px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
+    margin-left: 160px;  
+    padding: 0px;
   }
   .bigGraph{
     margin-left: 70px;
     float: left;
     width: 90%;
     height: 20%;
-  }
+  } 
   
-  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -133,12 +135,14 @@ a:hover {
   .column {
     float: left;
     width: 45%;
-  }
+  } 
   
-  /* Clear floats after the columns */
+   Clear floats after the columns
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
+   
+*/
   

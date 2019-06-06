@@ -1,7 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { DataService } from '../data.service';
-import { GrapDetalsComponent } from '../grap-detals/grap-detals.component';
-import { type } from 'os';
 import { MachesComponent } from '../maches/maches.component';
 
 @Component({

@@ -1,14 +1,15 @@
 
-<section class="content-area main">
+<!--<section class="content-area main">
   <div class="table-area">
     <table class="responsive-table table">
       <thead class="main">
         <tr>
           <th>Code</th>
-          <th>League</th>
           <th>Home</th>
           <th>Away</th>
-          <th>Status</th>
+          <th>Score</th>
+          <th>Minut</th>
+          <th>fora</th>
         </tr>
       </thead>
       <tbody>
@@ -16,14 +17,42 @@
          *ngFor="let mach of Maches1"
          routerLink="graph/{{ mach.code }}">
             <td>{{ mach.code }}</td>
-            <td>{{ mach.league }}</td>
             <td>{{ mach.home }}</td>
             <td>{{ mach.away  }}</td>
-            <td>Status</td>
+            <td>{{mach.reshome}}: {{mach.resaway}}</td>
+            <td>{{ mach.minut  }}</td>
+            <td>{{ mach.res  }}</td>
           </tr>
       </tbody>
     </table>
   </div>
 </section>
+ <div class="row" style="margin-left: 10%; width: 1500px;"
+ *ngFor="let mach of Maches1">
+    <div class="col m6">
+      <div class="card">
+          <div class="card-stacked" style="height: 70px">
+        <div class="card-content">
+          <p style="padding-top: 0%">Code: {{ mach.code }}</p>
+          <h5><b>{{ mach.home }}</b>   VS   <b>{{ mach.away }}</b> <p class="secondary-content"> <b> Score  </b><b>{{mach.reshome}}</b>:<b>{{mach.resaway}} </b></p> </h5>
+          <p> Min: {{ mach.minut  }}</p>
+        </div>
+        </div>
+        <div class="card-action">
+          <a  routerLink="graph/{{ mach.code }}">Show graph</a>
+        </div>
+      </div>
+      -->
+    
+    <div class="col m5"  style="padding-left: 170px"
+    *ngFor="let mach of Maches1">
+    <div class="card">
+        <div class="optional-header" style="background-color: rgb(243, 242, 232)">
+            <h5><b>{{ mach.home }}:{{mach.reshome}}</b>   VS   <b>{{mach.resaway}}:{{ mach.away }}</b></h5>
+            <a style="color: orange"  routerLink="graph/{{ mach.code }}">Show graph<p class="secondary-content" style="margin-left: 120px; color: orange; font-size: 20px;"> Min: {{ mach.minut  }}</p></a> 
+          </div>
+          </div>
+    </div>
+    
     
 

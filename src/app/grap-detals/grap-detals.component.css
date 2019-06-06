@@ -1,4 +1,5 @@
 .inline { 
-    display: inline-block;  
-    margin:20px;
+    display: inline-block;
+    margin-left: 20%;  
+    top: 0;
     }

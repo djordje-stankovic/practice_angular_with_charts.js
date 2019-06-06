@@ -1,11 +1,6 @@
-
+<!--
 <div class="row">
-  <div class="row main">
-    <div class="row inline"><h2>Home : {{home}}</h2></div>
-    <div class="row inline"><h2>Away : {{away}}</h2></div>
-  </div>
   <div class="column">
-    <div class="chart">
       <canvas baseChart class="main"
         [datasets]="barChartDataFrist"
         [labels]="barChartLabelsFrist"
@@ -13,7 +8,6 @@
         [legend]="barChartLegend"
         [chartType]="barChartType">
       </canvas>
-    </div>
   </div>
   <div class="column">
     <canvas baseChart class="main"
@@ -22,11 +16,11 @@
     [options]="barChartOptions"
     [legend]="barChartLegend"
     [chartType]="barChartType">
-  </canvas>
+    </canvas>
+  </div>
 </div>
-</div>
-<div class="row bigGraph">
-  <div class="chart bigGraph">
+<div class="row">
+  <div class="bigGraph" style="height: 350px; width: 1000px;">
     <canvas baseChart class="bigGraph"
       [datasets]="barChartDataTr"
       [labels]="barChartLabelsTr"
@@ -35,4 +29,43 @@
       [chartType]="barChartType">
     </canvas>
   </div>
+</div>
+<div>
+  -->
+
+  <div class="card" style=" width: 100%;  border-top:#0a531a; border-right-color:#0a531a;">
+      <div class="optional-header" style="background-color: #0a531a; height: 20px;  border-top:#0a531a; margin-left: 120px; border-right-color:#0a531a;">
+        <h5 style="margin-left: 170px; color:rgb(245, 11, 11); font-size: 20px; margin-top: 0"> {{home}}<b style="margin-left: 400px;  color:rgb(243, 242, 232)"> {{minute}}min</b> <p class="secondary-content" style="padding: 0; margin-right: 180px; color: rgb(218, 186, 44); font-size: 20px;">{{ away  }}</p> </h5>            
+      </div>
+  </div>
+<div class="container" style="width: 200%; margin-left: 140px;  margin-right: 140px; margin-top: 0 ">   
+<div class="row">
+    <div class="col s6">
+        <canvas baseChart
+        [datasets]="barChartDataFrist"
+        [labels]="barChartLabelsFrist"
+        [options]="barChartOptions"
+        [legend]="barChartLegend"
+        [chartType]="barChartType">
+      </canvas>
+    </div>
+    <div class="col s6">
+        <canvas baseChart 
+        [datasets]="barChartDataSec"
+        [labels]="barChartLabelsSec"
+        [options]="barChartOptions"
+        [legend]="barChartLegend"
+        [chartType]="barChartType">
+        </canvas>
+    </div>
+      <div class="col s12">
+            <canvas baseChart
+              [datasets]="barChartDataTr"
+              [labels]="barChartLabelsTr"
+              [options]="barChartOptions"
+              [legend]="barChartLegend"
+              [chartType]="barChartType">
+            </canvas>
+      </div>
+</div>
 </div>

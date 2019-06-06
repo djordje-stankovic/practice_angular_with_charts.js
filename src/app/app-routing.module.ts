@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { GraphComponent } from './graph/graph.component';
 import { MachesComponent } from './maches/maches.component';
 import { GrapDetalsComponent } from './grap-detals/grap-detals.component';
 
