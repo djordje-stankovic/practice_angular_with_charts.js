@@ -1,9 +1,6 @@
 # UiForAndrija
 
 This project works with the server who provides data for all actual football games and shows the history of odds for the game. Graphs are refreshed dynamically every minute.
-------------------------------------
-
-
 
 ## Development server
 
