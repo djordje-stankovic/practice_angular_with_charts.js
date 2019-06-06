@@ -1,6 +1,9 @@
 # UiForAndrija
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+This project works with the server who provides data for all actual football games and shows the history of odds for the game. Graphs are refreshed dynamically every minute.
+------------------------------------
+
+
 
 ## Development server
 
